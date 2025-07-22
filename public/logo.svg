@@ -1,0 +1,19 @@
+<svg width="600" height="100" viewBox="0 0 600 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .dark { fill: #1c1c1c; font-family: 'Segoe UI', sans-serif; font-size: 60px; }
+    .green { fill: #7fff00; font-family: 'Segoe UI', sans-serif; font-size: 60px; }
+  </style>
+  <text x="10" y="70" class="dark">G</text>
+  <text x="50" y="70" class="green">a</text>
+  <text x="90" y="70" class="dark">m</text>
+  <text x="150" y="70" class="green">e</text>
+  <text x="190" y="70" class="dark">C</text>
+  <text x="230" y="70" class="dark">o</text>
+  <text x="270" y="70" class="dark">l</text>
+  <text x="290" y="70" class="dark">l</text>
+  <text x="310" y="70" class="green">e</text>
+  <text x="350" y="70" class="dark">c</text>
+  <text x="390" y="70" class="green">t</text>
+  <text x="420" y="70" class="green">o</text>
+  <text x="460" y="70" class="dark">r</text>
+</svg>

@@ -40,10 +40,19 @@ h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+li {
+  list-style: none;
+}
+
+li > a {
+  text-decoration: none;
+  color: #000000;
+}
+
 a {
   font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  color: #000000;
+  text-decoration: none;
 }
 a:hover {
   color: #535bf2;
@@ -53,3 +62,23 @@ body {
   min-height: 100vh;
 }
 
+/* HEADER */
+header {
+  max-height: 70px;
+}
+/* Logo */
+header > figure{
+  margin: 0;
+}
+
+header > figure > img{
+  max-height: 40px;
+}
+/* Menu */
+.menu > ul {
+  display: flex;
+  gap: 30px;
+}
+.searchbar {
+  padding-right: 10px;
+}
