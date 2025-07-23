@@ -8,7 +8,8 @@ export default function VideogameCard({vglist}) {
                     </div>
                     <div className="bottom">
                         <div className="videogame-title">{videogame.vgName}</div>
-                        <a href="#">View Videogame</a>
+                        {/* <a href="#">View Videogame</a> */}
+                        {<button type="button" className="btn btn-primary">Approfondisci</button>}
                     </div>
                 </div>
             ))}
