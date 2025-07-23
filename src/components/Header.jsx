@@ -14,7 +14,11 @@ export default function Header() {
                             Videogames
                         </Link>
                     </li>
-                    <li><a href="#">Consoles</a></li>
+                    <li>
+                        <Link to="/consoles">
+                            Consoles
+                        </Link>
+                    </li>
                 </ul>
             </nav>
             <div className="searchbar">
