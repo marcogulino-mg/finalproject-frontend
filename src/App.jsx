@@ -1,18 +1,21 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import './App.css'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Main from './components/Main'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import BaseLayout from "./layouts/BaseLayout";
+import VideogamesList from './pages/VideogamesList';
 
 function App() {
-
-
-  return (
-    <>
-      <Header />
-      <Main />
-      <Footer />
-    </>
+  return(
+      <BrowserRouter>
+      <Routes>
+        <Route Component={BaseLayout}>
+          {/* <Route index Component={Homepage} /> */}
+          <Route path="/videogames" element={<VideogamesList />} />
+          {/* <Route path="*" Component={Notfound} /> */}
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

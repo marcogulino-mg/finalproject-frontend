@@ -82,3 +82,47 @@ header > figure > img{
 .searchbar {
   padding-right: 10px;
 }
+
+/* MAIN */
+/* VideogameCard */
+.vg-list-container {
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.vg-list-wrapper{
+  width: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.videogame-card {
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.bottom {
+  padding: 12px;
+  background-color: white;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 0 0 12px 12px;
+  transition: transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.bottom:hover {
+  transform: translateY(-2px);
+}
+
+.videogame-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #111;
+  margin: 0 0 8px;
+}
