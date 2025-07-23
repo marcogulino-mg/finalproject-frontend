@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-import VideogameCard from "../components/videogames/videogameCard";
+import VideogameCard from "../components/videogames/VideogameCard";
 export default function VideogamesList() {
     // Arr of videogames
     const [videogames, setVideogames] = useState([]);

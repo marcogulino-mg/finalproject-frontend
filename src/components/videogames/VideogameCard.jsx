@@ -1,4 +1,13 @@
+import { useNavigate } from "react-router-dom";
+
 export default function VideogameCard({vglist}) {
+    const navigate = useNavigate();
+
+    function details(videogame) {
+        const slug = videogame.vgName.toLowerCase().replace(/\s+/g, '-');
+        navigate(`/videogames/${slug}`, { state: { id: videogame.id } });
+    };
+
     return (
         <div className="container-xl d-flex justify-content-center vg-list-container mt-4">
             {vglist.map(videogame => (
@@ -8,8 +17,7 @@ export default function VideogameCard({vglist}) {
                     </div>
                     <div className="bottom">
                         <div className="videogame-title">{videogame.vgName}</div>
-                        {/* <a href="#">View Videogame</a> */}
-                        {<button type="button" className="btn btn-primary">Approfondisci</button>}
+                        {<button type="button" onClick={() => details(videogame)} className="btn btn-primary">Approfondisci</button>}
                     </div>
                 </div>
             ))}

@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import BaseLayout from "./layouts/BaseLayout";
 import VideogamesList from './pages/VideogamesList';
 import ConsolesList from "./pages/ConsolesList";
+import VideogameShow from "./pages/VideogameShow";
 
 function App() {
   return(
@@ -14,6 +15,7 @@ function App() {
           {/* <Route index Component={Homepage} /> */}
           <Route path="/videogames" element={<VideogamesList />} />
           <Route path="/consoles" element={<ConsolesList />} />
+          <Route path="/videogames/:slug" element={<VideogameShow />} />
           {/* <Route path="*" Component={Notfound} /> */}
         </Route>
       </Routes>
