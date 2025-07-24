@@ -17,7 +17,7 @@ export default function VideogameCard({vglist}) {
                     </div>
                     <div className="bottom">
                         <div className="videogame-title">{videogame.vgName}</div>
-                        {<button type="button" onClick={() => details(videogame)} className="btn btn-primary">Approfondisci</button>}
+                        {<button type="button" onClick={() => details(videogame)} className="btn btn-primary">Informations</button>}
                     </div>
                 </div>
             ))}

@@ -1,4 +1,4 @@
-export default function VideogameCard({cslist}) {
+export default function ConsoleCard({cslist}) {
     return (
         <div className="container-xl d-flex justify-content-center vg-list-container mt-4">
             {cslist.map(console => (

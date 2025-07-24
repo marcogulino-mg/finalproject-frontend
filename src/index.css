@@ -126,3 +126,14 @@ header > figure > img{
   color: #111;
   margin: 0 0 8px;
 }
+
+/* VIDEOGAME INFO  */
+.cs-icon {
+  max-height: 50px;
+  object-fit: contain;
+}
+
+.card {
+  height: fit-content !important;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+}

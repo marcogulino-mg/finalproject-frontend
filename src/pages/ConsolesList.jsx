@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-import ConsoleCard from "../components/consoles/consoleCard";
+import ConsoleCard from '../components/consoles/ConsoleCard';
 export default function ConsolesList() {
     // Arr of videogames
     const [consoles, setConsoles] = useState([]);
