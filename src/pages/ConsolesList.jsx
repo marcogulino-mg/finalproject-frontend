@@ -1,22 +1,9 @@
-import axios from 'axios';
-import { useEffect, useState } from 'react';
-
+import { useContext } from "react";
+import { SearchContext } from "../contexts/SearchContext"
 import ConsoleCard from '../components/consoles/ConsoleCard';
-export default function ConsolesList() {
-    // Arr of videogames
-    const [consoles, setConsoles] = useState([]);
 
-    // Axios call
-    useEffect(() => {
-    axios.get("http://localhost:8080/api/consoles")
-      .then((res) => {
-        setConsoles(res.data);
-        console.log(res.data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-    }, []);
+export default function ConsolesList() {
+    const { consoles } = useContext(SearchContext);
 
     return <ConsoleCard cslist={consoles}/>;
 }

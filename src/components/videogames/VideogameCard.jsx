@@ -4,8 +4,7 @@ export default function VideogameCard({vglist}) {
     const navigate = useNavigate();
 
     function details(videogame) {
-        const slug = videogame.vgName.toLowerCase().replace(/\s+/g, '-');
-        navigate(`/videogames/${slug}`, { state: { id: videogame.id } });
+        navigate(`/videogames/${videogame.slug}`);
     };
 
     return (
@@ -17,7 +16,7 @@ export default function VideogameCard({vglist}) {
                     </div>
                     <div className="bottom">
                         <div className="videogame-title">{videogame.vgName}</div>
-                        {<button type="button" onClick={() => details(videogame)} className="btn btn-primary">Informations</button>}
+                        {<button type="button" onClick={() => details(videogame)} className="btn btn-primary">Information</button>}
                     </div>
                 </div>
             ))}

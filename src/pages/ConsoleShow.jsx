@@ -2,22 +2,19 @@ import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useParams, useLocation } from "react-router-dom";
 
-import VideogameInfo from '../components/videogames/VideogameInfo';
-export default function VideogameShow() {
+import ConsoleInfo from '../components/consoles/ConsoleInfo';
+export default function ConsoleShow() {
     const { slug } = useParams();
     const location = useLocation();
-    const [videogame, setVideogame] = useState(null);
-
-    // Debug logging
-    console.log('slug:', slug);
-    console.log('location.state:', location.state);
+    const id = location.state?.id;
+    const [console, setConsole] = useState(null);
 
     // Axios call
     useEffect(() => {
 
-        axios.get(`http://localhost:8080/api/videogames/slug/${slug}`)
+        axios.get(`http://localhost:8080/api/consoles/slug/${slug}`)
             .then((res) => {
-                setVideogame(res.data);
+                setConsole(res.data);
                 console.log(res.data);
             })
             .catch((error) => {
@@ -25,5 +22,5 @@ export default function VideogameShow() {
             });
     }, [slug]);
 
-    return <VideogameInfo vg={videogame}/>;
+    return <ConsoleInfo cs={console}/>;
 }
