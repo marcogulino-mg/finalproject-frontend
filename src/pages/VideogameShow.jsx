@@ -1,17 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { useParams, useLocation, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 import VideogameInfo from "../components/videogames/VideogameInfo";
 export default function VideogameShow() {
   const { slug } = useParams();
-  const location = useLocation();
   const [videogame, setVideogame] = useState(null);
   const navigate = useNavigate();
-
-  // Debug logging
-  console.log("slug:", slug);
-  console.log("location.state:", location.state);
 
   // Axios call
   useEffect(() => {
