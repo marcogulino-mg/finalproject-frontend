@@ -1,8 +1,10 @@
 import { createContext, useState, useEffect } from "react";
 import axios from "axios";
 
+// Create Context
 export const SearchContext = createContext();
 
+// Create Provider
 export default function SearchProvider({ children }) {
   const [videogames, setVideogames] = useState([]);
   const [consoles, setConsoles] = useState([]);
